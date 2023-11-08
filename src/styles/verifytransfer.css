@@ -1,0 +1,56 @@
+.nums {
+    margin-left: 28%;
+    text-align: start;
+  }
+  .num {
+    margin-left: 42%;
+    text-align: start;
+  }
+  .numbers {
+    margin-left: 39%;
+    text-align: start;
+  }
+  .number {
+    margin-left:38%;
+    text-align: start;
+  }
+  input {
+    border: none;
+    align-items: center;
+    font-weight:bold;
+    font-size: 30px;
+  }
+  input::placeholder {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+  }
+  .button-2 {
+    width: 325px;
+    height: 54px;
+    margin-top: 10px;
+    background-color: #9D0208;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+  }
+  .button-1 {
+    width: 325px;
+    height: 54px;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 15px 25px lightgrey;
+    border: 1px solid black;
+  }
+  .details-hold {
+    margin-top: 15%;
+  }
+  p{
+      font-weight:600;
+  }

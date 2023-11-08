@@ -1,0 +1,73 @@
+.dispatch{
+    width:100%;
+    height:90vh;
+}
+.app-logo{
+    background:url(../images/Pepsa\ Logo.svg);
+    width:25px;
+    height:25px;
+}
+.app-logo-2{
+    background:url(../images/Pepsa\ Logo\ \(1\).svg);
+    width:29px;
+    height:28px;
+}
+.app-name{
+    font-weight:bold;
+    color: #9D0208;
+}
+.getstarted{
+    background-color: #9D0208;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+}
+.pickup{
+    border: 1px solid lightgrey;
+    width:90%;
+    height:50px; 
+}
+.icon{
+    background:url(../images/PEPSA\ MARKETPLACE.zip);
+}
+.box-radio{
+    width:90%;
+    height:50px;
+}
+input::placeholder{
+    font-weight: bold;
+}
+.button{
+    width:90%;
+    height:60px;
+    background-color: #9D0208;
+    border-radius:8px;
+    border:none;
+    color:white;
+    font-weight:bold;
+    font-size: 20px;
+    box-shadow:0px 15px 25px lightgrey;
+}
+.foot{
+    width:100%;
+    height:200px;
+    background-color: #9D0208;
+    color:white;
+}
+.address{
+    width:90%;
+    height:60px;
+    background-color:lightgrey;
+}
+.button{
+    width:90%;
+    height:60px;
+    background-color: #9D0208;
+    border-radius:8px;
+    border:none;
+    color:white;
+    font-weight:bold;
+    font-size: 20px;
+    box-shadow:0px 15px 25px lightgrey;
+}

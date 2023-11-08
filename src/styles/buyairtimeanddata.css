@@ -1,0 +1,56 @@
+.AirtimeData {
+    width: 100%;
+    height: 89vh;
+  }
+  .buyairtime {
+    width: 90%;
+    height: 90px;
+    background-color: white;
+    margin: 10px 10px 0px 20px;
+    border-radius: 8px;
+    border: none;
+    text-align: start;
+    padding: 10px;
+    box-shadow: 0px 0px 10px lightgrey;
+    /* font-weight: bold; */
+  }
+  .Airtimeheader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px lightgrey;
+  }
+  .airtimedata{
+      font-weight:bold;
+  }
+  .svgg1{
+      margin-top: 10px;
+  }
+  .svgg2{
+      margin-top: 10px;
+  }
+  .buydata {
+    width: 90%;
+    height: 90px;
+    background-color: white;
+    margin: 10px 10px 0px 20px;
+    border-radius: 8px;
+    border: none;
+    text-align: start;
+    padding: 10px;
+    box-shadow: 0px 0px 10px lightgrey;
+    /* font-weight: bold; */
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  svg {
+    fill: var(--Body-Text, black);
+  }
+ 
