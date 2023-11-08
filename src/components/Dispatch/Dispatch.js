@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/Dispatch.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import CustomCalendar from "./Calendar";
 
 function Dispatch() {
   return (
@@ -126,6 +127,8 @@ function Dispatch() {
                       >
                         House/strt.number <b style={{ color: "#9D0208" }}>*</b>
                       </p>
+
+                      {/* Location Input */}
                       <input
                         type="text"
                         className="form-control mt-2 strt-icon"
@@ -191,18 +194,6 @@ function Dispatch() {
                       </Link>
                     </center>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
-                  </button>
                 </div>
               </div>
             </div>
@@ -350,18 +341,6 @@ function Dispatch() {
                     </center>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -373,38 +352,89 @@ function Dispatch() {
           Order Details <b style={{ color: "#9D0208" }}>*</b>
         </p>
         <center>
-          <div class="input-group mb-3 box-radio">
-            <div class="input-group-text">
+          <div class="input-group mb-3 box-radio rounded-1 d-flex align-items-center border gap-4 justify-content-start px-4 pb-3">
+            <div class="mb-1">
               <input
-                class="form-check-input mt-0"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                class="form-check-input mt-0 "
+                style={{ width: "25px", height: "25px" }}
                 type="checkbox"
                 value=""
                 aria-label="Checkbox for following text input"
               />
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
-              placeholder="Schedule Delivery"
-            />
-          </div>
-          <div class="input-group mb-3 box-radio">
-            <div class="input-group-text">
-              <input
-                class="form-check-input mt-0"
-                type="checkbox"
-                value=""
-                aria-label="Checkbox for following text input"
-              />
-            </div>
+              {/* button trigger modal */}
 
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Text input with checkbox"
-              placeholder="Two way delivery (Return Item)"
-            />
+              <div
+                className="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h1
+                        className="modal-title fs-5 text-center"
+                        id="staticBackdropLabel"
+                      >
+                        Delivery Schedule
+                      </h1>
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="modal-body">
+                      {/* <CustomCalendar /> */}
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" className="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="pt-2">
+              {" "}
+              <p className="text-secondary fs-5">
+                Schedule delivery (Optional)
+              </p>
+            </div>
+          </div>
+          <div
+            class="input-group mb-3 box-radio rounded-1 border d-flex align-items-center gap-4 "
+            style={{ paddingLeft: "22px" }}
+          >
+            <div class="mb-1">
+              <input
+                class="form-check-input mt-0 "
+                style={{ width: "25px", height: "25px" }}
+                type="checkbox"
+                value=""
+                aria-label="Checkbox for following text input"
+              />
+            </div>
+            <div className="pt-2">
+              {" "}
+              <p className="text-secondary fs-5">
+                Two way delivery (Return Item)
+              </p>
+            </div>
           </div>
         </center>
       </div>
